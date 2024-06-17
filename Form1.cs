@@ -539,7 +539,7 @@ namespace WindowsFormsApp1
             for (int i = 0; i < driverDTP.Count; i++)
             {
                 // проверяем, что ДТП > 1
-                if (driverDTP[i] > 1)
+                if (driverDTP[i] >= 2)
                 {
                     // получаем все данные водителя по ID
                     Driver dtpDriver = driver.Where(w => w.ID == i).Select(w => w).First();
